@@ -7,7 +7,7 @@ window.onload = function () {
   // Remove loader after page is loaded
 document.getElementById("loader").style.display = "none";
 
-  alert("🚧 Site is under maintenance. Please be patient.");
+  alert("🚧 Site is under maintenance. Please have patience.");
   typeWriter();
   document.getElementById("year").textContent = new Date().getFullYear();
 };
