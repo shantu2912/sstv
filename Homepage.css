@@ -150,12 +150,14 @@ footer {
 }
 @media (max-width: 768px) {
   nav ul {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; /* keep in one line */
+    justify-content: space-around; /* space links evenly */
+    overflow-x: auto; /* allow horizontal scroll if needed */
   }
 
   nav li {
-    margin: 10px 0;
+    margin: 0 0.5rem; /* smaller margin to fit better */
+    white-space: nowrap; /* prevent link text wrapping */
   }
 
   .founder-cards {
