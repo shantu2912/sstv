@@ -7,8 +7,7 @@
    <link rel="stylesheet" href="Homepage.css">
   
    <style>
-
-    .fade-in {
+.fade-in {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 1s ease-out, transform 1s ease-out;
@@ -19,7 +18,7 @@
   transform: translateY(0px);
 }
 
-    /* Loader Styles */
+/* Loader Styles */
 #loader {
   position: fixed;
   z-index: 9999;
@@ -45,11 +44,47 @@
   100% { transform: rotate(360deg); }
 }
 
-    body {
-       background-color: #cfe8fe; /* light blue */
-      font-family: Arial, sans-serif;
-    }
-  </style>
+body {
+  background-color: #cfe8fe; /* light blue */
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+  background: #0047ab;
+  overflow-x: auto; /* allow horizontal scroll if needed */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap; /* keep items in one line */
+}
+
+nav li {
+  margin: 0 0.5rem;
+  white-space: nowrap; /* prevent link text wrapping */
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+/* Optional: adjust font size on very small screens */
+@media (max-width: 400px) {
+  nav a {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+</style>
+
 </head>
 <body>
   <div id="loader">
