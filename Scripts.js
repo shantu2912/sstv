@@ -1,6 +1,6 @@
 // Show maintenance alert on page load
 window.onload = function () {
-  alert("🚧 Site is under maintenance. Please be patient.");
+  alert("🚧 Site is under maintenance. Please be patience.");
   typeWriter();
   document.getElementById("year").textContent = new Date().getFullYear();
 };
