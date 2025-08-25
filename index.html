@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSTV Software development Private Limited</title>
+   <link rel="stylesheet" href="Homepage.css">
+  
+   <style>
+
+    .fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+    /* Loader Styles */
+#loader {
+  position: fixed;
+  z-index: 9999;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  border: 8px solid #cfe8fe;
+  border-top: 8px solid #0047ab;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+    body {
+       background-color: #cfe8fe; /* light blue */
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="loader">
+  <div class="spinner"></div>
+</div>
+
+   <script src="script.js"></script>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="file:///D:/Html%20folder/Homepage.html">Home</a></li>
+        <li><a href="file:///D:/Html%20folder/Aboutus.html">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="file:///D:/Html%20folder/Contactus.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+   <main>
+  <div class="marquee-container">
+  <div class="marquee-text" style="color: red;">
+ WELCOME TO SSTV 🚧 Site is under maintenance. Please be patient....
+  </div>
+</div>
+
+
+
+
+    <section class="intro fade-in">
+      <img src="SSTV.jpeg" alt="SSTV Logo" class="logo">
+      <h2><span class="highlight">SSTV</span></h2>
+       <h1><i id="typewriter"></i></h1>
+      <p class="welcome-msg">Welcome to SSTV Software Development Company Website!</p>
+      <p class="description">
+        <em>We are feeling proud to announce the launch of our first-ever digital platform. Our company is committed to bringing innovation and quality to this fast-evolving tech world.</em>
+      </p>
+    </section>
+      
+      
+<section class="founders fade-in">
+      <h2>The Founders of Our Company</h2>
+      <div class="founder-cards">
+        <div class="card">
+          <a href=" https://www.instagram.com/shantanu___ingole45"><h3>Mr. Shantanu Ingole</h3></a>
+          
+          <p>Co-Founder</p>
+        </div>
+        <div class="card">
+          <a href=" https://www.instagram.com/shrikrushna___14"> <h3>Mr. Shrikrushna Satpute</h3></a>
+         
+          <p>Co-Founder</p>
+        </div>
+        <div class="card">
+          <a href=" https://www.instagram.com/tanmay_korde.____"><h3>Mr. Tanmay Korde</h3></a>
+          
+          <p>Co-Founder</p>
+        </div>
+        <div class="card">
+          <a href=" https://www.instagram.com/vedantgawande_18"> <h3>Mr. Vedant Gawande</h3></a>
+         
+          <p>Co-Founder</p>
+        </div>
+      </div>
+    </section>
+      
+ <footer>
+      <p>&copy; 2025 SSTV Software Development Company Pvt. Ltd.</p>
+    </footer>
+  </main>
+ 
+
+</body>
+</html>
