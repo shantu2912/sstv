@@ -299,69 +299,6 @@ footer a:hover {
   <!-- Scroll to top button -->
   <button id="scrollTopBtn">↑</button>
 
-  <script>
-  // Loader
-  window.addEventListener("load", () => {
-    document.getElementById("loader").style.display = "none";
-  });
-
-  // Fade-in on scroll
-  const fadeEls = document.querySelectorAll(".fade-in");
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
-  }, { threshold: 0.1 });
-  fadeEls.forEach(el => observer.observe(el));
-
-  // Typewriter effect with blinking cursor
-  const slogans = [
-    "🚀 Driven By Innovation, Defined By Quality",
-    "💻 We Build Software That Matters",
-    "🌍 Turning Ideas Into Digital Reality"
-  ];
-  let i = 0, j = 0, isDeleting = false;
-
-  function type() {
-    const currentText = slogans[i];
-    const typewriter = document.getElementById("typewriter");
-
-    if (!isDeleting) {
-      typewriter.innerText = currentText.substring(0, j++);
-      if (j > currentText.length) {
-        isDeleting = true;
-        setTimeout(type, 1500); // pause before deleting
-        return;
-      }
-    } else {
-      typewriter.innerText = currentText.substring(0, j--);
-      if (j < 0) {
-        isDeleting = false;
-        i = (i + 1) % slogans.length; // move to next slogan
-      }
-    }
-
-    setTimeout(type, isDeleting ? 60 : 100); // typing speed
-  }
-
-  type(); // start typing
-
-  // Scroll to top button
-  const scrollBtn = document.getElementById("scrollTopBtn");
-  window.onscroll = function() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      scrollBtn.style.display = "block";
-    } else {
-      scrollBtn.style.display = "none";
-    }
-  };
-  scrollBtn.onclick = function() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-</script>
-
 
 </body>
 </html>
